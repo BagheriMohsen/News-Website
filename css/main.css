@@ -1,0 +1,305 @@
+
+.rtl {
+  direction: rtl;
+}
+/* RTL site */
+body{
+    direction: rtl !important;
+}
+/* Scroll bar */
+/* ::-webkit-scrollbar {
+    width: 25px;
+    background: #f1f1f1;
+  } */
+
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 40px;
+  } */
+
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: #ee7441;
+    border-radius:40px;
+   
+
+  } */
+
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #ee7441;
+  
+  } */
+/* scroll end */
+
+
+/* Naruto Orange */
+.naruto-orange {
+    background-color: #ee7441 !important;
+}
+
+.sasuke-red {
+  background-color: red;
+}
+
+/* Naruto Logo */
+.naruto-logo{
+  width: 40px;
+}
+
+/* Naruto Navbar */
+.naruto-nav{
+  width: 25px;
+}
+
+/* Font Dana and BYekan*/
+/* Font For WebSite */
+@font-face {
+  font-family:dana-reqular;
+  src: url(../font/dana-regular.woff);
+}
+@font-face {
+  font-family:dana-bold;
+  src: url(../font/dana-bold.woff);
+}
+@font-face {
+  font-family:BYekan;
+  src: url(../font/BYekan.woff);
+}
+body ,div,section,nav,li,ul,span,i
+{
+  font-family: dana-reqular !important;
+}
+
+h1,h2,h3,h4,h5,h6,strong,b,a,.link,button{
+  font-family: dana-bold !important;
+}
+
+.byekan {
+  font-family: BYekan !important;
+}
+
+.dana-regular{
+  font-family: dana-reqular;
+}
+.dana-bold{
+  font-family: dana-bold;
+}
+
+.bg-sec{
+  background-color: #d6d6d6;
+}
+
+.text-sec {
+  color:#d6d6d6;
+}
+
+/* Search-bar */
+* search */
+.searchbar{
+  margin-right:30px;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 30%;
+  background-color:white !important;
+  border-radius: 5px;
+  padding: 5px;
+  }
+#search-spin-on {
+  display: none;
+}
+.search_input{
+  color: black;
+  border: 0;
+  outline: 0;
+  background: white;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  padding: 0 10px;
+  width: 380px;
+  caret-color:black;
+  transition: width 0.4s linear;
+  }
+
+  .bg-white{
+    background-color: white;
+  }
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.search_icon_spin {
+    border-radius: 50%;
+    background-color: red;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+
+
+/* end search */
+
+
+/* First Section  */
+
+.first-boxes {
+  overflow: hidden;
+  height: 225px;
+  position: relative;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  background-position: center center;
+  filter: brightness(40%);
+}
+
+.first-boxes:hover {
+  filter: brightness(90%);
+  animation-name:bright ;
+  animation-duration: 1000ms;
+}
+@keyframes bright {
+  from {
+    filter: brightness(40%);
+  }
+  to {
+    filter: brightness(90%);
+  }
+
+
+}
+
+
+
+.middle-boxes {
+  overflow: hidden;
+  height: 450px;
+  position: relative;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  background-position: center center;
+  filter: brightness(40%);
+}
+
+.middle-boxes:hover {
+  filter: brightness(90%);
+  animation-name:bright ;
+  animation-duration: 1000ms;
+}
+@keyframes bright {
+  from {
+    filter: brightness(40%);
+  }
+  to {
+    filter: brightness(90%);
+  }
+
+
+}
+
+
+
+
+.Details{
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  z-index: 2;
+  font-family: BYekan !important;
+  width: 100%;
+}
+
+.Details h5 {
+  font-family: BYekan !important;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 16px;
+  line-height: 28px;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: -10px;
+}
+
+.GroupName{
+  font-family: BYekan !important;
+  background: #ff7830;
+  color: #ffffff;
+  padding: 1px 4px;
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 11px;
+}
+
+.Date{
+  font-family: BYekan !important;
+}
+
+/* Title */
+.custom-title{
+  font-family: BYekan !important;
+  position: relative;
+  display: inline-block;
+  background-color: #ff7830;
+  color: #fff !important;
+  padding: 8px 17px 0;
+  font-size: 1em;
+  margin-bottom: 7px;
+  height: 37px;
+}
+
+.custom-title:after {
+  content: '';
+  position: absolute;
+  left: -33px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 37px solid #ff7830;
+  border-left: 34px solid transparent;
+}
+
+/* Image Rounded */
+.img-circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* article  */
+.article_details{
+  color:#999;
+}
+
+
+/* Footer */
+.footer-color{
+  background-color: #363636 !important;
+}
+
+
+/* NavBar */
+.nav-icon {
+  font-size:20px;
+}
+
+.nav-btn:hover{
+  background-color: orange;
+  border-radius:20%;
+}
+
+
